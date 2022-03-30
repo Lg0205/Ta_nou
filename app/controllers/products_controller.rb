@@ -7,4 +7,12 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def index_vrac
+    @products = Product.where(panier: false)
+  end
+
+  def index_panier
+    @products = Product.where(panier: true)
+  end
+
 end
