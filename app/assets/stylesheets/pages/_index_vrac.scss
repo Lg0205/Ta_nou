@@ -8,6 +8,12 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.card-product image {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+
 .card-product {
   height: 85%;
   width: 500px;
@@ -62,4 +68,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+

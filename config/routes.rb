@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :products
   get "index_vrac", to: "products#index_vrac"
   get "index_panier", to: "products#index_panier"
+  get "show_panier", to: "products#show_panier"
+
+
 end
