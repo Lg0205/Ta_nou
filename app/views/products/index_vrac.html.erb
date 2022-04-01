@@ -1,3 +1,4 @@
+
 <div class="body">
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <div class="container">
@@ -16,19 +17,25 @@
     </div>
   </div>
 
-  <div class="row justify-content-center">
-    <div class="col-12 col-8">
-      <div class="cards">
-        <% @products.each do |product| %>
-          <%= link_to product_path(product) do %>
-            <div class="card-product">
-              <%= image_tag product.image if product.image %>
-              <h1><%= product.name %></h1>
-              <h2><%= product.price %></h2>
-            </div>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
- </div>
-<% console %>
+
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-6">
+        <div class="cards">
+         <% @products.each do |product| %>
+           <%= link_to product_path(product) do %>
+             <div class="card-product">
+                <%= image_tag product.image if product.image %>
+                <h1><%= product.name %></h1>
+                <h2><%= product.price %></h2>
+             </div>
+           <% end %>
+         <% end %>
+         <div class="btn">
+            <a class="btn btn-ghost" href="#">Poursuivre ma commande</a>
+         </div>
+        </div>
+     </div>
+   </div>
+</div>
+
