@@ -1,0 +1,34 @@
+<div class="body">
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container">
+      <img src="https://cdn.shopify.com/s/files/1/0246/4035/6429/files/TaNou_Bio-Logo_full_1_250x_2x_fc5b9f35-511e-41d6-b02f-f800cbbd426b_150x@2x.png?v=1632786228" height="78.3" width="150" />
+    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link disabled">Accueil </a>
+    <li class="nav-item">
+    <a class="nav-link disabled">Notre Association</a>
+     <li class="nav-item">
+    <a class="nav-link disabled">Contact</a>
+     </li>
+     </li>
+  </li>
+</ul>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-8">
+      <div class="cards">
+        <% @products.each do |product| %>
+          <%= link_to product_path(product) do %>
+            <div class="card-product">
+              <%= image_tag product.image if product.image %>
+              <h1><%= product.name %></h1>
+              <h2><%= product.price %></h2>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+ </div>
+<% console %>
