@@ -15,7 +15,10 @@ class ProductsController < ApplicationController
     @products = Product.where(panier: true)
   end
 
+<<<<<<< HEAD
   def show_panier
 
   end
+=======
+>>>>>>> 386506af45dd0d36dd74d987348a0e5527f3d640
 end
