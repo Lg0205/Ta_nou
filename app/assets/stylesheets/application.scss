@@ -10,3 +10,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+a {
+  text-decoration: none;
+  text-align: end;
+  color: black;
+  font-size: 8px;
+  font-family: 'Sorts Mill Goudy', serif;
+  &:hover {
+    color: #00414e
+  }
+}
