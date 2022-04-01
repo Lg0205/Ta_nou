@@ -7,5 +7,4 @@ Rails.application.routes.draw do
   get "index_panier", to: "products#index_panier"
   get "show_panier", to: "products#show_panier"
 
-
 end
